@@ -1,0 +1,32 @@
+schema: metabrain.team/v1
+name: feature-flow
+from_pattern: feature-flow
+roles:
+  - as: arch
+    role: architect
+    executor:
+      kind: harness
+      harness: claude-code
+      model: claude-sonnet-4-6
+    consumes: {}
+  - as: impl
+    role: implementer
+    executor:
+      kind: harness
+      harness: claude-code
+      model: claude-sonnet-4-6
+    consumes:
+      design: arch/design
+  - as: ver
+    role: verifier
+    machine: workstation-b
+    executor:
+      kind: harness
+      harness: claude-code
+      model: claude-sonnet-4-6
+    consumes:
+      diff: impl/diff
+gates:
+  - after: arch/design
+    decisions: [approve, revise, kill]
+outputs: [ver/verdict]

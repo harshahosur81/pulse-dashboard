@@ -1,0 +1,13 @@
+schema: metabrain.gate-request/v1
+run_id: run-dash-01
+repo: pulse-dashboard
+team: feature-flow
+artifact: arch/design
+attempt: 1
+artifact_path: .brain/runs/run-dash-01/arch/design
+artifact_digest: sha256:5bd57c0d2b3023d6ecc01c2a1ae8003fb97918877f12fb53a7c6b9be3070430b
+artifact_bytes: 74
+blocked_consumers:
+- impl
+- ver
+created_by_runner_on: workstation-a

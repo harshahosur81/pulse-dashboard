@@ -1,0 +1,4 @@
+schema: metabrain.subscription/v1
+contract: pulse-engine/alert-dispatch
+version: '1.0'
+typed_digest: sha256:023665bc0745e084c73867091bba82365c9b3e1d4c634c73ccb3b318d07682f3

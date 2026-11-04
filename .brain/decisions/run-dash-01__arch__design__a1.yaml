@@ -1,0 +1,12 @@
+schema: metabrain.decision/v1
+run_id: run-dash-01
+repo: pulse-dashboard
+team: feature-flow
+artifact: arch/design
+attempt: 1
+artifact_digest: sha256:5bd57c0d2b3023d6ecc01c2a1ae8003fb97918877f12fb53a7c6b9be3070430b
+gate_request_digest: sha256:8f46dadd020a4ffb7b360595b54e8db5a1864db3182123b5bd08b7e3cdb3fe4a
+decision: approved
+by: operator
+actor_kind: human
+comment: Approved dashboard design
